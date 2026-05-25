@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+asitha/
+data/
+config.env
+.cache/
+.local/
+.agents/
+*.log
