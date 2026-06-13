@@ -1,21 +1,29 @@
 {
-  "name": "ASITHA-MD",
-  "description": "Javascript WhatsApp bot made by Asitha",
+  "name": "THARU-MD",
+  "description": "Javascript WhatsApp bot made by Tharu",
   "logo": "https://telegra.ph/file/38a4ba6f7a51c15f5feaf.jpg",
-  "keywords": ["bot"],
+  "keywords": ["bot", "whatsapp", "node"],
   "success_url": "/",
-
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your phone number (with country code).",
+      "value": "94768079246",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Name of your bot.",
+      "value": "THARU-MD",
+      "required": true
     }
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
   "stack": "heroku-24"
 }
